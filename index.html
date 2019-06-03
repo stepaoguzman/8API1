@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html >
+<html lang="en" ng-app="P">
 <head>
 	<script src="lib/jquery.js"></script>
 	<title>PokemonGT</title>
 	<link rel="stylesheet" href="lib/boo/css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body ng-controller="pokemon">
+	<div class="cuadro"ng-repeat="y in listadopokemon">
+		<img src="{{y.data.sprites.front_default}}">
+		<h1>{{staryu}}</h1>
+	</div>
 	<script src="lib/angular.js"></script>			
 	<script src="lib/boo/js/bootstrap.js"></script>
 	<script src="js/script.js"></script>	
